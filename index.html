@@ -16,10 +16,11 @@
                 <div class="display-6">
                     Buscar Usuário GitHub
                 </div>
-                <form>
+                <form onsubmit="search(); return false;">
                     <div class="row justify-content-center">
                         <div class="col-lg-6">
-                            <input type="text" class="form-control" id="username" placeholder="User Name" aria-describedby="unername">
+                            <input type="text" class="form-control" id="username" placeholder="User Name"
+                                aria-describedby="unername">
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary mt-5">Pesquisar</button>
@@ -29,10 +30,10 @@
                 <div class="display-6">
                     Dados do Usuário
                 </div>
-                <div id="name">Glauco Todesco</div>
-                <div id="url">"https://github.com/glaucotodesco"</div>
-                <div id="company">Abuta Tecnologia</div>
-                <img src="https://avatars.githubusercontent.com/u/17340839?v=4" alt="avatar" width="200" height="200" class="shadow rounded">
+                <div id="name"></div>
+                <div id="html_url"></div>
+                <div id="company"></div>
+                <div id="avatar_url"></div>
             </section>
             <section class="mt-5">
                 <div class="display-6">
@@ -40,13 +41,16 @@
                 </div>
                 <div class="row mt-3">
                     <div class="col">
-                        <img src="https://avatars.githubusercontent.com/u/17340839?v=4" alt="avatar" width="200" height="200" class="shadow rounded">
+                        <img src="https://avatars.githubusercontent.com/u/17340839?v=4" alt="avatar" width="200"
+                            height="200" class="shadow rounded">
                     </div>
                     <div class="col">
-                        <img src="https://avatars.githubusercontent.com/u/17340839?v=4" alt="avatar" width="200" height="200" class="shadow rounded">
+                        <img src="https://avatars.githubusercontent.com/u/17340839?v=4" alt="avatar" width="200"
+                            height="200" class="shadow rounded">
                     </div>
                     <div class="col">
-                        <img src="https://avatars.githubusercontent.com/u/17340839?v=4" alt="avatar" width="200" height="200" class="shadow rounded">
+                        <img src="https://avatars.githubusercontent.com/u/17340839?v=4" alt="avatar" width="200"
+                            height="200" class="shadow rounded">
                     </div>
                 </div>
             </section>
@@ -58,7 +62,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    <script src="js/jquery-3.6.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
